@@ -4,14 +4,20 @@ import java.util.regex.Pattern;
 
 public class Item {
 
-	private String upc, name;
-	private char type, cat;
+	private String upc;
+	private String name;
+	private char type;
+	private char cat;
 	private double bPrice;
-	private String bPriceStart, bPriceStop;
+	private String bPriceStart;
+	private String bPriceStop;
 	private double discount;
-	private String disStart, disStop;
-	private int buyM, getN;
-	private String buyMNStart, buyMNStop;
+	private String disStart;
+	private String disStop;
+	private int buyM;
+	private int getN;
+	private String buyMNStart;
+	private String buyMNStop;
 	private char taxable;
 	
 	public Item() {
@@ -52,7 +58,7 @@ public class Item {
 			this.buyMNStart = buyMNStart;
 		if (checkDate(buyMNStop))
 			this.buyMNStop = buyMNStop;
-		if (taxable != 'T' || taxable != 'F')
+		if (taxable == 'T' || taxable == 'F')
 			this.taxable = taxable;
 	}
 	
