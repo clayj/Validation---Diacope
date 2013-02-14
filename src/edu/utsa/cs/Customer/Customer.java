@@ -23,7 +23,7 @@ public class Customer {
 			e.printStackTrace();
 		}
 		this.date = "";
-		receipt = new Receipt();
+		receipt = new Receipt(date);
 	}
 	
 	public String getDate() {
@@ -38,6 +38,7 @@ public class Customer {
 			else {
 				throw new IllegalArgumentException();
 			}
+			System.out.println("DATE: " + date);
 			while (custDataIn.hasNextLine()) {
 				String line = custDataIn.next();
 				if (line.charAt(0) != '#') {
@@ -59,7 +60,7 @@ public class Customer {
 					} catch (NoSuchElementException e) {
 						
 					}
-					receipt = new Receipt();
+					receipt = new Receipt(date);
 					break;
 				}
 			}

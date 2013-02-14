@@ -6,7 +6,10 @@ import edu.utsa.cs.Item.ItemDatabase;
 
 public class Main {
 	
+	public static boolean debug = false;
+	
 	public static void main(String[] args) {
+		debug = true;
 		new Main().init();
 		Customer c = new Customer();
 		c.readItems();

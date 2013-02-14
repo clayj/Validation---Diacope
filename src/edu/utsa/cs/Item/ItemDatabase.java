@@ -31,9 +31,9 @@ public class ItemDatabase {
 	}
 	
 	public static Item getFromUPC(String arg) {
-		Iterator i = database.iterator();
+		Iterator<Item> i = database.iterator();
 		while (i.hasNext()) {
-			Item temp = (Item) i.next();
+			Item temp = i.next();
 			if (temp.getUPC().equals(arg))
 				return temp;
 		}

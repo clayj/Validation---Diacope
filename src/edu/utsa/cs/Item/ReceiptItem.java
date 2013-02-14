@@ -33,11 +33,15 @@ public class ReceiptItem {
 		return item.getBPrice();
 	}
 	
+	public char getCat() {
+		return item.getCat();
+	}
+	
 	public void setQuantity(int q) {
 		this.quantity = q;
 	}
 	
-	public int getType() {
+	public char getType() {
 		return item.getType();
 	}
 	
