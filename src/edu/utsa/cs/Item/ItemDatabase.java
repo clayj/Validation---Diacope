@@ -39,4 +39,11 @@ public class ItemDatabase {
 		}
 		return null;
 	}
+	
+	public static void print() {
+		Iterator<Item> i = database.iterator();
+		while (i.hasNext()) {
+			i.next().print();
+		}
+	}
 }

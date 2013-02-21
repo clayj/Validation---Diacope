@@ -3,6 +3,7 @@ package edu.utsa.cs.Main;
 import edu.utsa.cs.Cards.CardDatabase;
 import edu.utsa.cs.Customer.Customer;
 import edu.utsa.cs.Item.ItemDatabase;
+import edu.utsa.cs.SalesTax.SalesTaxDatabase;
 
 public class Main {
 	
@@ -13,6 +14,7 @@ public class Main {
 		new Main().init();
 		Customer c = new Customer();
 		c.readItems();
+//		printDatabases();
 	}
 	
 	private void init() {
@@ -21,6 +23,14 @@ public class Main {
 		new ItemDatabase();
 		System.out.println("Loading Card Database...");
 		new CardDatabase();
+		System.out.println("Loading Sales Tax Database...");
+		new SalesTaxDatabase();
+	}
+	
+	private static void printDatabases() {
+		ItemDatabase.print();
+		CardDatabase.print();
+		SalesTaxDatabase.print();
 	}
 
 }

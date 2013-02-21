@@ -34,6 +34,10 @@ public class Card {
 			return false;
 	}
 	
+	public void print() {
+		System.out.println(type + " " + number + " " + available);
+	}
+	
 	public String toString() {
 		return type + " " + number + " " + available;
 	}

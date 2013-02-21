@@ -126,6 +126,10 @@ public class Item {
 		return taxable;
 	}
 	
+	public void print() {
+		System.out.println(upc + " " + name + " " + type + " " + cat + " " + bPrice + " " + bPriceStart + " " + bPriceStop + " " + discount + " " + disStart + " " + disStop + " " + buyM + " " + getN + " " + buyMNStart + " " + buyMNStop + " " + taxable);
+	}
+	
 	public String toString() {
 		return upc + " " + name + " " + type + " " + cat + " " + bPrice + " " + bPriceStart + " " + bPriceStop + " " + discount + " " + disStart + " " + disStop + " " + buyM + " " + getN + " " + buyMNStart + " " + buyMNStop + " " + taxable;
 	}
